@@ -114,264 +114,6 @@
       ]
     },
     {
-      "tag":"OpenAI",
-      "type":"selector",
-      "outbounds":[
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "America"
-    },
-    {
-      "tag":"Google",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Telegram",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Twitter",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Facebook",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"BiliBili",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "HongKong",
-        "TaiWan"
-      ]
-    },
-    {
-      "tag":"Bahamut",
-      "type":"selector",
-      "outbounds":[
-        "TaiWan",
-        "Proxy"
-      ]
-    },
-    {
-      "tag":"Spotify",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ],
-      "default": "America"
-    },
-    {
-      "tag":"TikTok",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America"
-      ],
-      "default": "Japan"
-    },
-    {
-      "tag":"Netflix",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Disney+",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Apple",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Microsoft",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Games",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Streaming",
-      "type":"selector",
-      "outbounds":[
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others"
-      ]
-    },
-    {
-      "tag":"Global",
-      "type":"selector",
-      "outbounds":[ 
-        "HongKong",
-        "TaiWan",
-        "Singapore",
-        "Japan",
-        "America",
-        "Others",
-        "direct"
-      ]
-    },
-    {
-      "tag":"China",
-      "type":"selector",
-      "outbounds":[
-        "direct",
-        "Proxy"
-      ]
-    },
-    {
-      "tag":"HongKong",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
-      "tag":"TaiWan",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
-      "tag":"Singapore",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
-      "tag":"Japan",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
-      "tag":"America",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
-      "tag":"Others",
-      "type":"urltest",
-      "outbounds":[
-      ],
-      "url": "http://www.gstatic.com/generate_204",
-      "interval": "3m",
-      "tolerance": 50,
-      "idle_timeout": "30m"
-    },
-    {
       "tag":"auto",
       "type":"urltest",
       "outbounds":[
@@ -380,6 +122,158 @@
       "interval": "3m",
       "tolerance": 50,
       "idle_timeout": "30m"
+    },
+    {
+      "tag":"OpenAI",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Google",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Telegram",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Twitter",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Facebook",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"BiliBili",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "direct"
+    },
+    {
+      "tag":"Bahamut",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "direct"
+    },
+    {
+      "tag":"Spotify",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"TikTok",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Netflix",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Disney+",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Apple",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Microsoft",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "direct"
+    },
+    {
+      "tag":"Games",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "direct"
+    },
+    {
+      "tag":"Streaming",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"Global",
+      "type":"selector",
+      "outbounds":[
+        "Proxy",
+        "direct"
+      ],
+      "default": "Proxy"
+    },
+    {
+      "tag":"China",
+      "type":"selector",
+      "outbounds":[
+        "direct",
+        "Proxy"
+      ]
     },
     {
       "type": "direct",
