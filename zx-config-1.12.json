@@ -106,6 +106,14 @@
   ],
   "outbounds": [
     {
+      "type": "shadowsocks",
+      "tag": "home",
+      "server": "8888",
+      "server_port": 55600,
+      "password": "99999",
+      "method": "aes-256-gcm"
+    },
+    {
       "tag":"Proxy",
       "type":"selector",
       "outbounds":[
@@ -394,6 +402,19 @@
     "final": "Proxy",
     "rules": [
       {
+        "ip_cidr": [
+        "192.168.1.0/24"
+        ],
+        "outbound": "home"
+      },
+      {
+        "domain_suffix": [
+        "ktpd.fun",
+        "zdljxdf.vip"
+        ],
+        "outbound": "direct"
+      },
+      {
         "inbound": ["tun-in", "mixed-in"],
         "action": "sniff"
       },
@@ -439,19 +460,6 @@
       },
       {
         "ip_is_private": true,
-        "outbound": "direct"
-      },
-      {
-        "ip_cidr": [
-        "192.168.1.0/24"
-        ],
-        "outbound": "home"
-      },
-      {
-        "domain_suffix": [
-        "ktpd.fun",
-        "zdljxdf.vip"
-        ],
         "outbound": "direct"
       },
       {
